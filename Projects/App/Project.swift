@@ -14,6 +14,7 @@ let infoPlist: [String: InfoPlist.Value] = [
   "CFBundleVersion": "1",
   "CFBundleDevelopmentRegion": "ko_KR",
   "UIUserInterfaceStyle": "Dark",
+  "UILaunchStoryboardName":"LaunchScreen",
   "UIAppFonts": [
     "Item 0": "Pretendard-Medium.otf",
     "Item 1": "Pretendard-Bold.otf"
@@ -25,7 +26,7 @@ let appTargets: [Target] = [
           platform: .iOS,
           product: .app,
           bundleId: "com.adultOfNineteen.app",
-          deploymentTarget: .iOS(targetVersion: "15.0", devices: [.iphone]),
+          deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone]),
           infoPlist: .extendingDefault(with: infoPlist),
           sources: ["Sources/**"],
           resources: ["Resources/**"],
